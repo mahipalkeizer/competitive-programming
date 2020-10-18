@@ -1,0 +1,26 @@
+you have two rooks at position (a,b) and (x,y) print "YES" if one rook can attack other in no more than 2 moves or else print 'NO'  .
+
+
+contraint :
+	1<=test cases<=10**4
+	1<=a,b,c,d<=8
+
+input :
+	first line contain number of test cases
+	each test case has one line  containing a,b,x,y 
+
+output :
+	'YES' if one can attack other in no more than 2 moves else 'NO'  
+
+example :
+input 
+2
+1 1 4 4
+1 1 1 2
+output :
+'YES'
+'NO'
+
+first case:
+(1,1)->(3,2)->(4,4)
+

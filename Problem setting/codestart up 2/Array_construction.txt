@@ -1,0 +1,44 @@
+def score(Arr,Brr,N):
+	sum=0
+	for i in range(N):
+		sum+=(Arr[i]+Brr[i])%2
+	return sum 
+
+
+you are given two numbers N,K
+find the number of ways to construct two Arrays Arr,Brr of length N 
+such that ,
+1) 0<=i<n ,0<=Arr[i],Brr[i]<=1
+2) score (Arr,Brr,N) is K
+
+Constrains :
+1<=test cases<10**4
+1<=n<10**5
+0<=K<min(100,n)
+
+
+Input :
+first line contain number of test cases 
+each test case has one line containing space separated n,k
+
+Output :
+for each test case print the number of ways to construct Arr,Brr such that their score is K ,answer can be big print under Modulo 10**9+7
+
+example :
+input :
+3
+1 1
+5 4
+10 3
+
+output:
+2
+160
+122880
+
+
+
+
+
+
+

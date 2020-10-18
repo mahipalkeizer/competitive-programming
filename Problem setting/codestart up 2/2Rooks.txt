@@ -1,4 +1,4 @@
-you have two rooks at position (a,b) and (x,y) print "YES" if one rook can attack other in no more than 2 moves or else print 'NO'  .
+you have two Knights at position (a,b) and (c,d) print "YES" if one Knight can attack other in no more than 2 moves or else print 'NO'  .
 
 
 contraint :
@@ -7,7 +7,7 @@ contraint :
 
 input :
 	first line contain number of test cases
-	each test case has one line  containing a,b,x,y 
+	each test case has one line  containing a,b,c,d 
 
 output :
 	'YES' if one can attack other in no more than 2 moves else 'NO'  

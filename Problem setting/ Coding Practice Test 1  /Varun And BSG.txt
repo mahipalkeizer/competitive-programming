@@ -1,0 +1,55 @@
+
+			Varun And Binary String Generation
+
+Varun has a task to generate k consecutive 0's.
+
+Varun has a function that generates random binary bit('1' or '0') and a string 'S' which is initially empty.After generating the bit he append it to the end of string he has.
+Varun is running late for a party help him by telling him the expected length of a string when it will have K consecutive) 0's.
+
+so he can plan his day accordingly.
+
+Note : function have equal probability of generating '1' or '0' 
+
+eg.. 
+k=2,s=''
+function generates 0,s='0'
+function generates 1,s='01'
+function generates 1,s='011'
+function generates 0,s='0110'
+function generates 0,s='01100'        
+Varun have achieved 2 consecutive 0's so process stops
+
+Answer can be large so print it mod 998,244,353 .
+
+constraints:
+	1<=t<=10**5
+	1<=k<=10**18 for 50% of the testcases 
+	1<=k<=10**4  for 50% of the testcases
+
+Input :
+first line contains t, number of test cases 
+each test case has single line K, number of consecutive 0's required to win. 
+
+output :
+for each test case print a single line containing expected length of string when it will have k consecutive 0's.  
+
+example:
+2
+1
+23434
+
+output :
+2
+363364850
+
+
+
+
+
+
+
+
+
+
+
+

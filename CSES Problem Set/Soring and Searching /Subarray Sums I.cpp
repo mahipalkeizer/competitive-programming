@@ -1,0 +1,34 @@
+#include<bits/stdc++.h>
+using namespace std;
+#include <iostream>
+#define ll long long 
+ 
+const int MOD = 1e9+7;
+ 
+void test_case(){
+    int n,x;cin>>n>>x;
+    vector<int> arr(n);
+    
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    map<ll,int> mp;
+    int ans=0; 
+    ll cursum=0;
+    mp[cursum]+=1;
+    for(int i=0;i<n;i++){
+        cursum+=arr[i];
+        ans+=mp[cursum-x];
+        mp[cursum]+=1;;
+    }   
+    cout<<ans<<'\n';
+}   
+ 
+int main(){
+    int t;
+    t=1;
+    // cin>>t;
+    while(t--)
+        test_case();
+    return 0;
+}
